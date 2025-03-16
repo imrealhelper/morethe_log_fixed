@@ -5,22 +5,22 @@ import styled from "@emotion/styled"
 import { Emoji } from "src/components/Emoji"
 
 const ServiceCard: React.FC = () => {
-  if (!CONFIG.projects) return null
+  if (!CONFIG.services) return null
   return (
     <>
       <StyledTitle>
         <Emoji>🌟</Emoji> Service
       </StyledTitle>
       <StyledWrapper>
-        {CONFIG.projects.map((project, idx) => (
+        {CONFIG.services.map((service, idx) => (
           <a
             key={idx}
-            href={`${project.href}`}
+            href={`${service.href}`}
             rel="noreferrer"
             target="_blank"
           >
             <AiFillCodeSandboxCircle className="icon" />
-            <div className="name">{project.name}</div>
+            <div className="name">{service.name}</div>
           </a>
         ))}
       </StyledWrapper>
