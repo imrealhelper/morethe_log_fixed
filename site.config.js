@@ -1,32 +1,45 @@
 const CONFIG = {
   // profile setting (required)
   profile: {
-    name: "morethanmin",
+    name: "jinwooim",
     image: "/avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
-    role: "frontend developer",
-    bio: "I develop everything using node.",
-    email: "morethanmin.dev@gmail.com",
-    linkedin: "morethanmin",
-    github: "morethanmin",
+    role: "Undergraduate student researcher",
+    bio: "I am an undergraduate research student in iASL(inha Autonomous system lab) at Inha University.",
+    email: "jinwooiminha@gmail.com",
+    linkedin: "jinwoo-im-589a5a287",
+    github: "AEInha",
     instagram: "",
   },
   projects: [
     {
       name: `morethan-log`,
       href: "https://github.com/morethanmin/morethan-log",
+    },{
+      name: `supersonic`,
+      href: "https://supersonic.streamlit.app/",
     },
+  ],
+    services: [
+    {
+      name: "morethan-log",
+      href: "https://github.com/morethanmin/morethan-log"
+    },
+    {
+      name: "SuperSonic",
+      href: "https://supersonic.streamlit.app/"
+    },
+    // 더 많은 서비스 추가
   ],
   // blog setting (required)
   blog: {
-    title: "morethan-log",
-    description: "welcome to morethan-log!",
-    scheme: "dark", // 'light' | 'dark' | 'system'
+    title: "JinwooIm's Blog",
+    description: "welcome my blog!",
   },
 
   // CONFIG configration (required)
   link: "https://morethan-log.vercel.app",
-  since: 2022, // If leave this empty, current year will be used.
-  lang: "en-US", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
+  since: 2023, // If leave this empty, current year will be used.
+  lang: "ko-KR", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
   ogImageGenerateURL: "https://og-image-korean.vercel.app", // The link to generate OG image, don't end with a slash
 
   // notion configuration (required)
@@ -56,8 +69,8 @@ const CONFIG = {
   utterances: {
     enable: true,
     config: {
-      repo: process.env.NEXT_PUBLIC_UTTERANCES_REPO || "",
-      "issue-term": "og:title",
+      repo: "AEInha/utterance",
+    "issue-term": "og:title",
       label: "💬 Utterances",
     },
   },
