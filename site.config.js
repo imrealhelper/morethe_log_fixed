@@ -34,6 +34,7 @@ const CONFIG = {
   blog: {
     title: "JinwooIm's Blog",
     description: "welcome my blog!",
+    scheme: "dark", // 추가
   },
 
   // CONFIG configration (required)
